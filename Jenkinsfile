@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage('Update Database') {
       steps {
-        step([$class: 'UpdateBuilder', installationName: 'liquibase3.8.9', username: 'mehroz', password: 'lahore', url: "${MYSQL_DB_CONNECTION_STRING}", changeLogFile: "my_app-wrapper.xml"])
+        step([$class: 'UpdateBuilder', installationName: 'liquibase3.8.9', username: 'monty', password: 'lahore', url: "${MYSQL_DB_CONNECTION_STRING}", changeLogFile: "my_app-wrapper.xml"])
       }
     }
   }
