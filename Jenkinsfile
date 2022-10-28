@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    MYSQL_DB_CONNECTION_STRING = "jdbc:mysql://localhost:3306/my_app"
+    MYSQL_DB_CONNECTION_STRING = "jdbc:mysql://MySQL80:3306/my_app"
   }
   stages {
     stage('Update Database') {
